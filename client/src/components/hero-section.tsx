@@ -8,7 +8,7 @@ export default function HeroSection() {
         <div className="mb-8 relative inline-block">
           <div className="w-48 h-48 mx-auto rounded-full overflow-hidden animate-pulse-glow border-4 border-glow-cyan">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
+              src="https://media.discordapp.net/attachments/1005939753641848924/1020311183661740093/van-gogh-art.gif?ex=68a711d6&is=68a5c056&hm=a92699075da9133494a396d57e58357d803b82ff46ba83b2c35550a2d3c4f858&=" 
               alt="henrysz - Desenvolvedor Profissional" 
               className="w-full h-full object-cover"
               data-testid="profile-photo"
@@ -19,14 +19,14 @@ export default function HeroSection() {
         
         {/* Name with Glow Effect */}
         <h1 className="font-poppins text-6xl md:text-8xl font-bold mb-4 text-gradient-stellar animate-float" data-testid="name-title">
-          henrysz
+          Luiz Eduardo
         </h1>
         
         {/* Professional Info */}
         <div className="space-y-2 mb-8 text-lg md:text-xl text-gray-300">
           <p className="flex items-center justify-center gap-2">
             <Mail className="w-5 h-5 text-stellar-cyan" />
-            <span data-testid="location">São Paulo, Brasil</span>
+            <span data-testid="location">Rio De Janeiro, Brasil</span>
           </p>
           <p className="flex items-center justify-center gap-2">
             <span className="w-5 h-5 text-stellar-purple flex items-center justify-center">💻</span>
@@ -34,7 +34,7 @@ export default function HeroSection() {
           </p>
           <p className="flex items-center justify-center gap-2">
             <span className="w-5 h-5 text-stellar-blue flex items-center justify-center">🎓</span>
-            <span data-testid="education">Ciência da Computação</span>
+            <span data-testid="education">Engenharia De Software</span>
           </p>
         </div>
         
