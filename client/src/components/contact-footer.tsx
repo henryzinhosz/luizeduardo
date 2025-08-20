@@ -1,4 +1,4 @@
-import { Github, Mail, Linkedin } from 'lucide-react';
+import { Github, Mail, Linkedin, Instagram } from 'lucide-react';
 
 export default function ContactFooter() {
   return (
@@ -12,27 +12,45 @@ export default function ContactFooter() {
           
           <div className="flex justify-center gap-6 mb-6" data-testid="contact-links">
             <a 
-              href="#" 
+              href="https://github.com/henryzinhosz" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 glassmorphism rounded-full flex items-center justify-center hover:bg-white/10 hover:scale-110 transition-all duration-300 group"
               data-testid="contact-github"
+              aria-label="GitHub Profile"
             >
               <Github className="w-6 h-6 group-hover:text-glow-cyan transition-colors" />
             </a>
             
             <a 
-              href="mailto:contact@henrysz.dev" 
+              href="mailto:luizedurj31@gmail.com" 
               className="w-12 h-12 glassmorphism rounded-full flex items-center justify-center hover:bg-white/10 hover:scale-110 transition-all duration-300 group"
               data-testid="contact-email"
+              aria-label="Email Contact"
             >
               <Mail className="w-6 h-6 group-hover:text-stellar-purple transition-colors" />
             </a>
             
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/luizeduarddo" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 glassmorphism rounded-full flex items-center justify-center hover:bg-white/10 hover:scale-110 transition-all duration-300 group"
               data-testid="contact-linkedin"
+              aria-label="LinkedIn Profile"
             >
               <Linkedin className="w-6 h-6 group-hover:text-stellar-blue transition-colors" />
+            </a>
+
+            <a 
+              href="https://www.instagram.com/luizazeveddo" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 glassmorphism rounded-full flex items-center justify-center hover:bg-white/10 hover:scale-110 transition-all duration-300 group"
+              data-testid="contact-instagram"
+              aria-label="Instagram Profile"
+            >
+              <Instagram className="w-6 h-6 group-hover:text-pink-400 transition-colors" />
             </a>
           </div>
         </div>
