@@ -41,28 +41,28 @@ export default function HeroSection() {
         {/* Social Links */}
         <div className="flex justify-center gap-6">
           <a 
-            href="#" 
+            href="https://github.com/henryzinhosz" 
             className="w-12 h-12 glassmorphism rounded-full flex items-center justify-center hover:bg-white/10 hover:scale-110 transition-all duration-300 group"
             data-testid="link-github"
           >
             <Github className="w-6 h-6 group-hover:text-glow-cyan transition-colors" />
           </a>
           <a 
-            href="#" 
+            href="https://www.linkedin.com/in/luizeduarddo" 
             className="w-12 h-12 glassmorphism rounded-full flex items-center justify-center hover:bg-white/10 hover:scale-110 transition-all duration-300 group"
             data-testid="link-linkedin"
           >
             <Linkedin className="w-6 h-6 group-hover:text-stellar-blue transition-colors" />
           </a>
           <a 
-            href="#" 
+            href="https://www.instagram.com/luizazeveddo" 
             className="w-12 h-12 glassmorphism rounded-full flex items-center justify-center hover:bg-white/10 hover:scale-110 transition-all duration-300 group"
             data-testid="link-instagram"
           >
             <Instagram className="w-6 h-6 group-hover:text-glow-purple transition-colors" />
           </a>
           <a 
-            href="mailto:contact@henrysz.dev" 
+            href="mailto:luizedurj31@gmail.com" 
             className="w-12 h-12 glassmorphism rounded-full flex items-center justify-center hover:bg-white/10 hover:scale-110 transition-all duration-300 group"
             data-testid="link-email"
           >
