@@ -16,13 +16,13 @@ export default function AboutSection() {
           
           <div className="text-lg leading-relaxed text-gray-200 space-y-4">
             <p data-testid="bio-paragraph-1">
-              Sou um desenvolvedor full stack apaixonado por criar soluções digitais inovadoras que conectam tecnologia e experiência do usuário. Com experiência sólida em desenvolvimento web moderno, busco sempre entregar projetos que não apenas funcionem perfeitamente, mas que também inspirem e engajem.
+              Olá! Meu nome é Luiz, mas na internet sou conhecido como "Henry" e "Aslam". Sou do Rio de Janeiro (RJ), Brasil. Sou um grande entusiasta de café e livros. Meu escritor favorito é Sun Tzu, sou verdadeiramente fascinado por sua filosofia e pela arte chinesa. Suas reflexões me transportam para um universo majestoso e estratégico. A Arte da Guerra está entre minhas obras prediletas, oferecendo insights profundos sobre liderança, conquista e honra.
             </p>
             <p data-testid="bio-paragraph-2">
-              Minha jornada na programação começou com curiosidade sobre como as coisas funcionam no mundo digital. Hoje, especializo-me em React, JavaScript e Python, sempre explorando novas tecnologias e metodologias para criar experiências web excepcionais. Acredito que a programação é uma forma de arte que combina lógica, criatividade e resolução de problemas.
+              Minhas grandes paixões incluem: programação Front-End — pela liberdade de customização e pela imersão na experiência do usuário —, segurança da informação — com foco na proteção de servidores e dados confidenciais —, e artes marciais — sou competidor de Jiu-Jitsu e Muay Thai. Minha jornada na programação começou aos 13 anos, quando visitava meu tio e passava horas observando ele desenvolver códigos complexos. Aquele universo me cativou e, desde então, busquei me aprofundar na área por meio de cursos em instituições reconhecidas, como a Cisco Brasil, e formações gratuitas oferecidas pela Harvard. Atualmente, curso Engenharia de Software na Universidade Veiga de Almeida, no Rio de Janeiro.
             </p>
             <p data-testid="bio-paragraph-3">
-              Quando não estou codificando, gosto de estudar astronomia e explorar o universo dos games. Essas paixões me inspiram a pensar fora da caixa e a trazer uma perspectiva única para cada projeto que desenvolvo.
+              Além disso, sou membro da Destiny Org, uma organização brasileira privada de ensino, onde nos dedicamos à aprender e compreender sobre tecnologia, sociologia, filosofia e ciência.
             </p>
           </div>
         </div>
