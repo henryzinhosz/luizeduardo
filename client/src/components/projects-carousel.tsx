@@ -40,7 +40,7 @@ const projects: Project[] = [
     description: "Site para o grupo Discord Nyxion Family, com apresentação de membros, história do grupo e cards interativos",
     image: "https://media.discordapp.net/attachments/1390540377030791240/1408077046202105947/image.png?ex=68a86d70&is=68a71bf0&hm=55f6a35af103913bca5adc1cf00823f54bdf96786fab308e376991210a66a80b&=&format=webp&quality=lossless&width=1454&height=693",
     technologies: ["HTML", "CSS", "JavaScript"],
-    demoLink: "#",
+    demoLink: "https://nyxionfamily.vercel.app/",
     githubLink: "https://github.com/henryzinhosz",
     gradient: "from-stellar-cyan to-glow-cyan"
   },
