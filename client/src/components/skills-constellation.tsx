@@ -61,7 +61,7 @@ export default function SkillsConstellation() {
         {/* Network Constellation Layout */}
         <div className="relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] mx-auto max-w-6xl overflow-visible" data-testid="skills-constellation">
           {/* SVG for constellation lines */}
-          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
             {connections.map(([startIndex, endIndex], index) => {
               const startSkill = skills[startIndex];
               const endSkill = skills[endIndex];
@@ -95,13 +95,13 @@ export default function SkillsConstellation() {
             return (
               <div
                 key={skill.name}
-                className="skill-node absolute transform -translate-x-1/2 -translate-y-1/2"
+                className="skill-node absolute transform -translate-x-1/2 -translate-y-1/2 z-10"
                 style={{ left: `${skill.x}%`, top: `${skill.y}%` }}
                 onMouseEnter={() => setHoveredSkill(index)}
                 onMouseLeave={() => setHoveredSkill(null)}
                 data-testid={`skill-${skill.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
               >
-                <div className={`glassmorphism rounded-full w-16 h-16 flex items-center justify-center cursor-pointer transition-all duration-300 ${
+                <div className={`glassmorphism rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center cursor-pointer transition-all duration-300 ${
                   skill.category === 'frontend' ? 'bg-stellar-blue/20 border-2 border-stellar-blue' :
                   skill.category === 'backend' ? 'bg-stellar-purple/20 border-2 border-stellar-purple' :
                   skill.category === 'database' ? 'bg-stellar-cyan/20 border-2 border-stellar-cyan' :
@@ -113,7 +113,7 @@ export default function SkillsConstellation() {
                             skill.category === 'database' ? '0 0 20px rgba(6, 182, 212, 0.6)' :
                             '0 0 20px rgba(251, 146, 60, 0.6)'
                 } : {}}>
-                  <IconComponent className={`text-xl ${skill.color}`} />
+                  <IconComponent className={`text-lg md:text-xl ${skill.color}`} />
                 </div>
                 <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-center whitespace-nowrap">
                   {skill.name}
