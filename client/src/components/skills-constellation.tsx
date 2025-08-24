@@ -10,22 +10,22 @@ interface Skill {
   y: number;
 }
 
-const skills: Skill[] = [
-  { name: 'React.JS', icon: SiReact, color: 'text-stellar-blue', category: 'frontend', x: 50, y: 30 },
-  { name: 'JavaScript', icon: SiJavascript, color: 'text-stellar-blue', category: 'frontend', x: 70, y: 25 },
-  { name: 'HTML', icon: SiHtml5, color: 'text-stellar-blue', category: 'frontend', x: 40, y: 50 },
-  { name: 'CSS', icon: SiCss3, color: 'text-stellar-blue', category: 'frontend', x: 60, y: 55 },
-  { name: 'Tailwind', icon: SiTailwindcss, color: 'text-stellar-blue', category: 'frontend', x: 80, y: 45 },
-  { name: 'Next.JS', icon: SiNextdotjs, color: 'text-stellar-blue', category: 'frontend', x: 85, y: 30 },
-  
-  { name: 'Python', icon: SiPython, color: 'text-stellar-purple', category: 'backend', x: 20, y: 30 },
-  { name: 'C#', icon: SiSharp, color: 'text-stellar-purple', category: 'backend', x: 10, y: 70 },
-  
-  { name: 'SQL', icon: SiMysql, color: 'text-stellar-cyan', category: 'database', x: 50, y: 80 },
-  
-  { name: 'Git', icon: SiGit, color: 'text-orange-400', category: 'tools', x: 80, y: 70 },
-  { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-400', category: 'tools', x: 30, y: 20 },
-];
+  const skills: Skill[] = [
+    { name: 'React.JS', icon: SiReact, color: 'text-stellar-blue', category: 'frontend', x: 50, y: 20 },
+    { name: 'JavaScript', icon: SiJavascript, color: 'text-stellar-blue', category: 'frontend', x: 70, y: 15 },
+    { name: 'HTML', icon: SiHtml5, color: 'text-stellar-blue', category: 'frontend', x: 40, y: 40 },
+    { name: 'CSS', icon: SiCss3, color: 'text-stellar-blue', category: 'frontend', x: 60, y: 45 },
+    { name: 'Tailwind', icon: SiTailwindcss, color: 'text-stellar-blue', category: 'frontend', x: 80, y: 35 },
+    { name: 'Next.JS', icon: SiNextdotjs, color: 'text-stellar-blue', category: 'frontend', x: 85, y: 20 },
+    
+    { name: 'Python', icon: SiPython, color: 'text-stellar-purple', category: 'backend', x: 20, y: 20 },
+    { name: 'C#', icon: SiSharp, color: 'text-stellar-purple', category: 'backend', x: 10, y: 60 },
+    
+    { name: 'SQL', icon: SiMysql, color: 'text-stellar-cyan', category: 'database', x: 50, y: 70 },
+    
+    { name: 'Git', icon: SiGit, color: 'text-orange-400', category: 'tools', x: 80, y: 60 },
+    { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-400', category: 'tools', x: 30, y: 10 },
+  ];
 
 const connections = [
   [0, 1], [0, 2], [0, 3], 
@@ -101,7 +101,7 @@ export default function SkillsConstellation() {
                 onMouseLeave={() => setHoveredSkill(null)}
                 data-testid={`skill-${skill.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
               >
-                <div className={`glassmorphism rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center cursor-pointer transition-all duration-300 ${
+                <div className={`glassmorphism rounded-full w-10 h-10 md:w-14 md:h-14 flex items-center justify-center cursor-pointer transition-all duration-300 ${
                   skill.category === 'frontend' ? 'bg-stellar-blue/20 border-2 border-stellar-blue' :
                   skill.category === 'backend' ? 'bg-stellar-purple/20 border-2 border-stellar-purple' :
                   skill.category === 'database' ? 'bg-stellar-cyan/20 border-2 border-stellar-cyan' :
@@ -113,7 +113,7 @@ export default function SkillsConstellation() {
                             skill.category === 'database' ? '0 0 20px rgba(6, 182, 212, 0.6)' :
                             '0 0 20px rgba(251, 146, 60, 0.6)'
                 } : {}}>
-                  <IconComponent className={`text-lg md:text-xl ${skill.color}`} />
+                  <IconComponent className={`text-sm md:text-lg ${skill.color}`} />
                 </div>
                 <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-center whitespace-nowrap">
                   {skill.name}
