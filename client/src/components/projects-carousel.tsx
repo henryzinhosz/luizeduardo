@@ -16,32 +16,50 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Galático",
-    description: "Plataforma de e-commerce moderna com design responsivo, carrinho de compras inteligente e integração com APIs de pagamento. Desenvolvido com React e Node.js.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["React", "Node.js", "MongoDB"],
-    demoLink: "#",
-    githubLink: "#",
+    title: "Site Social",
+    description: "Um site de apresentação minha, de meus amigos e de meus projetos com design moderno e interativo. Desenvolvido com Html e Css",
+    image: "https://media.discordapp.net/attachments/1390540377030791240/1408076485251694702/image.png?ex=68a86cea&is=68a71b6a&hm=aa2f0468f57767f3fda21e63f23675ac7b4b7ae9c10ed7701051bc61a71e0f07&=&format=webp&quality=lossless&width=1464&height=693",
+    technologies: ["React", "HTML", "CSS"],
+    demoLink: "https://theworldofoz.vercel.app/",
+    githubLink: "https://github.com/henryzinhosz",
     gradient: "from-stellar-blue to-stellar-cyan"
   },
   {
     id: 2,
-    title: "Dashboard Estelar",
-    description: "Dashboard de produtividade com gerenciamento de tarefas, analytics em tempo real e integração com múltiplas APIs. Interface intuitiva e responsiva.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["Next.js", "TypeScript", "Prisma"],
-    demoLink: "#",
-    githubLink: "#",
+    title: "Sona Music",
+    description: "Bot de música que junta qualidade de áudio com a praticidade de uma dashboard player interativa.",
+    image: "https://media.discordapp.net/attachments/1390540377030791240/1408076902895456297/image.png?ex=68a86d4e&is=68a71bce&hm=43becce52578f41fa3c30970822f05209874a4bb0b9456dc44f00d1ae18796d6&=&format=webp&quality=lossless&width=1464&height=693",
+    technologies: ["Discord.js", "LavaLink", "Erela.js", "MongoDB"],
+    demoLink: "https://sonamusic.vercel.app/",
+    githubLink: "https://github.com/henryzinhosz",
     gradient: "from-stellar-purple to-glow-purple"
   },
   {
     id: 3,
-    title: "App Cósmico",
-    description: "Aplicativo mobile com design moderno, notificações push, sincronização em tempo real e interface otimizada para diferentes dispositivos.",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["React Native", "Firebase", "Expo"],
-    demoLink: "#",
-    githubLink: "#",
+    title: "Site Social",
+    description: "Site para o grupo Discord Nyxion Family, com apresentação de membros, história do grupo e cards interativos",
+    image: "https://media.discordapp.net/attachments/1390540377030791240/1408077046202105947/image.png?ex=68a86d70&is=68a71bf0&hm=55f6a35af103913bca5adc1cf00823f54bdf96786fab308e376991210a66a80b&=&format=webp&quality=lossless&width=1454&height=693",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    demoLink: "https://nyxionfamily.vercel.app/",
+    githubLink: "https://github.com/henryzinhosz",
+    gradient: "from-stellar-cyan to-glow-cyan"
+  },
+  {
+    id: 4,
+    title: "Contador de rosto",
+    description: "Sistema inteligente de detecção facial usando Python que conta rostos em imagens e vídeos com precisão.",
+    image: "https://revistasegurancaeletronica.com.br/wp-content/uploads/2025/03/Guia-de-tecnologias-de-reconhecimento-facial-para-profissionais-de-seguranca.jpg",
+    technologies: ["Python", "OpenCV"],
+    githubLink: "https://github.com/henryzinhosz/Contador-de-rosto",
+    gradient: "from-stellar-cyan to-glow-cyan"
+  },
+  {
+    id: 5,
+    title: "Calculadora de Idade",
+    description: "Aplicação Python integrada com Firebase para calcular idades precisas a partir de informações pessoais.",
+    image: "https://www.mobills.com.br/blog/wp-content/uploads/2023/02/imagem-destaque-calculadora-de-idade-mobills.png",
+    technologies: ["Python", "Firebase"],
+    githubLink: "https://github.com/henryzinhosz/Calculadora-de-idade",
     gradient: "from-stellar-cyan to-glow-cyan"
   }
 ];

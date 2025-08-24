@@ -8,7 +8,7 @@ export default function HeroSection() {
         <div className="mb-8 relative inline-block">
           <div className="w-48 h-48 mx-auto rounded-full overflow-hidden animate-pulse-glow border-4 border-glow-cyan">
             <img 
-              src="https://media.discordapp.net/attachments/1005939753641848924/1020311183661740093/van-gogh-art.gif?ex=68a711d6&is=68a5c056&hm=a92699075da9133494a396d57e58357d803b82ff46ba83b2c35550a2d3c4f858&=" 
+              src="https://media.discordapp.net/attachments/1005939753641848924/1020311183661740093/van-gogh-art.gif?ex=68a86356&is=68a711d6&hm=6b3aab000a96fbf8fdcfc2032bf2b72383c94c63fa13992597bf2964c2cea5c9&=&width=615&height=450" 
               alt="henrysz - Desenvolvedor Profissional" 
               className="w-full h-full object-cover"
               data-testid="profile-photo"
