@@ -77,8 +77,9 @@ export default function SkillsConstellation() {
                   y1={startSkill.y}
                   x2={endSkill.x}
                   y2={endSkill.y}
-                  className={`constellation-line ${isHighlighted ? 'opacity-100' : 'opacity-30'}`}
-                  strokeWidth={isHighlighted ? 2 : 1}
+                  className={`constellation-line ${isHighlighted ? 'opacity-100 stroke-white' : 'opacity-40 stroke-white'}`}
+                  strokeWidth={isHighlighted ? 2 : 0.5}
+                  stroke="currentColor"
                 />
               );
             })}
