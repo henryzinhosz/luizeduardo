@@ -11,20 +11,20 @@ interface Skill {
 }
 
   const skills: Skill[] = [
-    { name: 'React.JS', icon: SiReact, color: 'text-stellar-blue', category: 'frontend', x: 50, y: 20 },
-    { name: 'JavaScript', icon: SiJavascript, color: 'text-stellar-blue', category: 'frontend', x: 70, y: 15 },
-    { name: 'HTML', icon: SiHtml5, color: 'text-stellar-blue', category: 'frontend', x: 40, y: 40 },
-    { name: 'CSS', icon: SiCss3, color: 'text-stellar-blue', category: 'frontend', x: 60, y: 45 },
-    { name: 'Tailwind', icon: SiTailwindcss, color: 'text-stellar-blue', category: 'frontend', x: 80, y: 35 },
-    { name: 'Next.JS', icon: SiNextdotjs, color: 'text-stellar-blue', category: 'frontend', x: 85, y: 20 },
+    { name: 'React.JS', icon: SiReact, color: 'text-stellar-blue', category: 'frontend', x: 50, y: 25 },
+    { name: 'JavaScript', icon: SiJavascript, color: 'text-stellar-blue', category: 'frontend', x: 70, y: 20 },
+    { name: 'HTML', icon: SiHtml5, color: 'text-stellar-blue', category: 'frontend', x: 35, y: 45 },
+    { name: 'CSS', icon: SiCss3, color: 'text-stellar-blue', category: 'frontend', x: 65, y: 50 },
+    { name: 'Tailwind', icon: SiTailwindcss, color: 'text-stellar-blue', category: 'frontend', x: 80, y: 40 },
+    { name: 'Next.JS', icon: SiNextdotjs, color: 'text-stellar-blue', category: 'frontend', x: 85, y: 25 },
     
-    { name: 'Python', icon: SiPython, color: 'text-stellar-purple', category: 'backend', x: 20, y: 20 },
-    { name: 'C#', icon: SiSharp, color: 'text-stellar-purple', category: 'backend', x: 10, y: 60 },
+    { name: 'Python', icon: SiPython, color: 'text-stellar-purple', category: 'backend', x: 25, y: 25 },
+    { name: 'C#', icon: SiSharp, color: 'text-stellar-purple', category: 'backend', x: 15, y: 65 },
     
-    { name: 'SQL', icon: SiMysql, color: 'text-stellar-cyan', category: 'database', x: 50, y: 70 },
+    { name: 'SQL', icon: SiMysql, color: 'text-stellar-cyan', category: 'database', x: 50, y: 75 },
     
-    { name: 'Git', icon: SiGit, color: 'text-orange-400', category: 'tools', x: 80, y: 60 },
-    { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-400', category: 'tools', x: 30, y: 10 },
+    { name: 'Git', icon: SiGit, color: 'text-orange-400', category: 'tools', x: 75, y: 65 },
+    { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-400', category: 'tools', x: 35, y: 15 },
   ];
 
 const connections = [
