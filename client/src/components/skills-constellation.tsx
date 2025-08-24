@@ -61,7 +61,7 @@ export default function SkillsConstellation() {
         {/* Network Constellation Layout */}
         <div className="relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] mx-auto max-w-6xl overflow-visible" data-testid="skills-constellation">
           {/* SVG for constellation lines */}
-          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 50" preserveAspectRatio="none">
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
             {connections.map(([startIndex, endIndex], index) => {
               const startSkill = skills[startIndex];
               const endSkill = skills[endIndex];
@@ -77,9 +77,10 @@ export default function SkillsConstellation() {
                   y1={startSkill.y}
                   x2={endSkill.x}
                   y2={endSkill.y}
-                  className={`constellation-line ${isHighlighted ? 'opacity-100 stroke-white' : 'opacity-40 stroke-white'}`}
-                  strokeWidth={isHighlighted ? 2 : 0.5}
+                  className={`constellation-line ${isHighlighted ? 'opacity-100 stroke-white' : 'opacity-30 stroke-white'}`}
+                  strokeWidth={isHighlighted ? 1.5 : 0.8}
                   stroke="currentColor"
+                  strokeLinecap="round"
                 />
               );
             })}
