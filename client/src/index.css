@@ -128,11 +128,17 @@
   }
   
   .constellation-line {
-    stroke: var(--stellar-blue);
-    stroke-width: 1.5;
-    stroke-opacity: 0.6;
+    stroke: white;
+    stroke-width: 0.8;
+    stroke-opacity: 0.3;
     animation: constellation-pulse 4s infinite;
-    filter: drop-shadow(0 0 3px rgba(59, 130, 246, 0.5));
+    transition: all 0.3s ease;
+  }
+  
+  .constellation-line:hover,
+  .constellation-line.highlighted {
+    stroke-width: 1.5;
+    stroke-opacity: 1;
   }
   
   .skill-node {

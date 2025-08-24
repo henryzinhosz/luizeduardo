@@ -77,8 +77,7 @@ export default function SkillsConstellation() {
                   y1={startSkill.y}
                   x2={endSkill.x}
                   y2={endSkill.y}
-                  className={`constellation-line ${isHighlighted ? 'opacity-100 stroke-white' : 'opacity-30 stroke-white'}`}
-                  strokeWidth={isHighlighted ? 1.5 : 0.8}
+                  className={`constellation-line ${isHighlighted ? 'highlighted' : ''}`}
                   stroke="currentColor"
                   strokeLinecap="round"
                 />
