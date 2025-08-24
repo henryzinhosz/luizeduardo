@@ -68,7 +68,9 @@ export default function SkillsConstellation() {
               const isHighlighted = hoveredSkill !== null && 
                 (hoveredSkill === startIndex || hoveredSkill === endIndex || 
                  getConnectedSkills(hoveredSkill).includes(startIndex) || 
-                 getConnectedSkills(hoveredSkill).includes(endIndex));
+                 getConnectedSkills(hoveredSkill).includes(endIndex) || 
+                 getConnectedSkills(startIndex).includes(hoveredSkill) || 
+                 getConnectedSkills(endIndex).includes(hoveredSkill));
               
               return (
                 <line
@@ -77,9 +79,8 @@ export default function SkillsConstellation() {
                   y1={startSkill.y}
                   x2={endSkill.x}
                   y2={endSkill.y}
-                  className={`constellation-line ${isHighlighted ? 'highlighted' : ''}`}
-                  stroke="currentColor"
-                  strokeLinecap="round"
+                  className={`constellation-line ${isHighlighted ? 'opacity-100 stroke-white' : 'opacity-30 stroke-white'}`}
+                  strokeWidth={isHighlighted ? 1.5 : 0.2}
                 />
               );
             })}
