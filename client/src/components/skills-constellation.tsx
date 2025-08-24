@@ -11,44 +11,35 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  // Frontend Skills - Central area spread out
-  { name: 'React.JS', icon: SiReact, color: 'text-stellar-blue', category: 'frontend', x: 400, y: 150 },
-  { name: 'JavaScript', icon: SiJavascript, color: 'text-stellar-blue', category: 'frontend', x: 550, y: 120 },
-  { name: 'HTML', icon: SiHtml5, color: 'text-stellar-blue', category: 'frontend', x: 300, y: 220 },
-  { name: 'CSS', icon: SiCss3, color: 'text-stellar-blue', category: 'frontend', x: 480, y: 240 },
-  { name: 'Tailwind', icon: SiTailwindcss, color: 'text-stellar-blue', category: 'frontend', x: 650, y: 200 },
-  { name: 'Next.JS', icon: SiNextdotjs, color: 'text-stellar-blue', category: 'frontend', x: 720, y: 150 },
+  { name: 'React.JS', icon: SiReact, color: 'text-stellar-blue', category: 'frontend', x: 50, y: 30 },
+  { name: 'JavaScript', icon: SiJavascript, color: 'text-stellar-blue', category: 'frontend', x: 70, y: 25 },
+  { name: 'HTML', icon: SiHtml5, color: 'text-stellar-blue', category: 'frontend', x: 40, y: 50 },
+  { name: 'CSS', icon: SiCss3, color: 'text-stellar-blue', category: 'frontend', x: 60, y: 55 },
+  { name: 'Tailwind', icon: SiTailwindcss, color: 'text-stellar-blue', category: 'frontend', x: 80, y: 45 },
+  { name: 'Next.JS', icon: SiNextdotjs, color: 'text-stellar-blue', category: 'frontend', x: 85, y: 30 },
   
-  // Backend Skills - Left side spread out
-  { name: 'Python', icon: SiPython, color: 'text-stellar-purple', category: 'backend', x: 180, y: 150 },
-  { name: 'C#', icon: SiSharp, color: 'text-stellar-purple', category: 'backend', x: 80, y: 280 },
+  { name: 'Python', icon: SiPython, color: 'text-stellar-purple', category: 'backend', x: 20, y: 30 },
+  { name: 'C#', icon: SiSharp, color: 'text-stellar-purple', category: 'backend', x: 10, y: 70 },
   
-  // Database Skills - Bottom area
-  { name: 'SQL', icon: SiMysql, color: 'text-stellar-cyan', category: 'database', x: 400, y: 320 },
+  { name: 'SQL', icon: SiMysql, color: 'text-stellar-cyan', category: 'database', x: 50, y: 80 },
   
-  // Tools - Distributed across right and top
-  { name: 'Git', icon: SiGit, color: 'text-orange-400', category: 'tools', x: 680, y: 280 },
-  { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-400', category: 'tools', x: 250, y: 80 },
+  { name: 'Git', icon: SiGit, color: 'text-orange-400', category: 'tools', x: 80, y: 70 },
+  { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-400', category: 'tools', x: 30, y: 20 },
 ];
 
-// Network-style connections - creating a web of interconnected skills
 const connections = [
-  // Core frontend connections
-  [0, 1], [0, 2], [0, 3], // React connects to JS, HTML, CSS
-  [1, 4], [1, 5], // JavaScript connects to Tailwind, Next.js
-  [2, 3], [3, 4], // HTML-CSS, CSS-Tailwind
-  [4, 5], // Tailwind-Next.js
+  [0, 1], [0, 2], [0, 3], 
+  [1, 4], [1, 5], 
+  [2, 3], [3, 4],
+  [4, 5], 
   
-  // Backend to frontend bridges
-  [6, 0], [6, 1], // Python to React, JS
-  [7, 2], [7, 8], // C# to HTML, SQL
+  [6, 0], [6, 1], 
+  [7, 2], [7, 8], 
   
-  // Database connections
-  [8, 0], [8, 6], [8, 7], // SQL connects to React, Python, C#
+  [8, 0], [8, 6], [8, 7],
   
-  // Tool connections
-  [9, 0], [9, 5], [9, 8], // Git to React, Next.js, SQL
-  [10, 1], [10, 6], // Node.js to JavaScript, Python
+  [9, 0], [9, 5], [9, 8], 
+  [10, 1], [10, 6], 
 ];
 
 export default function SkillsConstellation() {
@@ -68,9 +59,9 @@ export default function SkillsConstellation() {
         </h2>
         
         {/* Network Constellation Layout */}
-        <div className="relative h-[400px] md:h-[500px] mx-auto max-w-6xl" data-testid="skills-constellation">
+        <div className="relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] mx-auto max-w-6xl overflow-visible" data-testid="skills-constellation">
           {/* SVG for constellation lines */}
-          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 400" preserveAspectRatio="none">
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 50" preserveAspectRatio="none">
             {connections.map(([startIndex, endIndex], index) => {
               const startSkill = skills[startIndex];
               const endSkill = skills[endIndex];
@@ -103,7 +94,7 @@ export default function SkillsConstellation() {
               <div
                 key={skill.name}
                 className="skill-node absolute transform -translate-x-1/2 -translate-y-1/2"
-                style={{ left: `${(skill.x / 800) * 100}%`, top: `${(skill.y / 400) * 100}%` }}
+                style={{ left: `${skill.x}%`, top: `${skill.y}%` }}
                 onMouseEnter={() => setHoveredSkill(index)}
                 onMouseLeave={() => setHoveredSkill(null)}
                 data-testid={`skill-${skill.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}

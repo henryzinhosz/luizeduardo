@@ -12,6 +12,11 @@ export default function HeroSection() {
               alt="henrysz - Desenvolvedor Profissional" 
               className="w-full h-full object-cover"
               data-testid="profile-photo"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iOTYiIGZpbGw9IiMzOTgzRkYiIGZpbGwtb3BhY2l0eT0iMC4yIi8+CjxwYXRoIGQ9Ik05NiA2NEMxMTEuNDY0IDY0IDEyNCA3Ni41MzYgMTI0IDkyQzEyNCAxMDcuNDY0IDExMS40NjQgMTIwIDk2IDEyMEM4MC41MzYgMTIwIDY4IDEwNy40NjQgNjggOTJDNjggNzYuNTM2IDgwLjUzNiA2NCA5NiA2NFoiIGZpbGw9IiMzOTgzRkYiLz4KPHBhdGggZD0iTTk2IDE0NEMxMTIuNTcgMTQ0IDEyNiAxMzcuNjEgMTI2IDEzMkMxMjYgMTI2LjM5IDExMi41NyAxMjAgOTYgMTIwQzc5LjQzIDEyMCA2NiAxMjYuMzkgNjYgMTMyQzY2IDEzNy42MSA3OS40MyAxNDQgOTYgMTQ0WiIgZmlsbD0iIzM5ODNGRiIvPgo8L3N2Zz4K';
+                target.alt = 'Avatar placeholder - Luiz Eduardo';
+              }}
             />
           </div>
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-glow-cyan to-glow-purple opacity-20 blur-xl"></div>
